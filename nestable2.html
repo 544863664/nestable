@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="font-size: 12px;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<meta charset="utf-8">
+		<title>nestable2</title>
+		<link rel="stylesheet" type="text/css" href="./nestable2.css"/>
+	</head>
+	<body>
+		<div class="nestwrap">
+			<div class="nestwrap-flwxbox nestwrap-left">
+				<div class="nestable">
+					<menu id="nestable-menu" class="nestable-menu3">
+						<button type="button" data-action="expand-all">Expand All</button>
+						<button type="button" data-action="collapse-all">Collapse All</button>
+						<input type="text" name="searchtext" id="searchtext" value="" placeholder="零件搜索" oninput="searchtextfn(event, 2)" />
+					</menu>
+					<div class="cf nestable-lists">
+						<div class="dd dd3" id="nestable3"></div>
+					</div>
+					<p><strong>Serialised Output (per list)</strong></p>
+					<textarea class="nestable-output" id="nestable3-output"></textarea>
+					
+				</div>
+			</div>
+			<div class="nestwrap-flwxbox nestwrap-right">
+				<div class="nestable">
+					<menu id="nestable-menu" class="nestable-menu4">
+						<button type="button" data-action="expand-all">Expand All</button>
+						<button type="button" data-action="collapse-all">Collapse All</button>
+					</menu>
+					<div class="cf nestable-lists">
+						<div class="dd dd4" id="nestable4"></div>
+					</div>
+					<p><strong>Serialised Output (per list)</strong></p>
+					<textarea class="nestable-output" id="nestable4-output"></textarea>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./jquery.nestable.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./nestable.js" type="text/javascript" charset="utf-8"></script>
+</html>
